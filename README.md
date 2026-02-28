@@ -22,7 +22,6 @@ temaSiemens/
 │   ├── OrderItemExtra.cs
 │   ├── Shop.cs
 │   ├── Size.cs
-│   ├── Program.cs
 │   ├── CoffeShopDiagram.cd      # Visual Studio class diagram (1.1)
 │   ├── DatabaseRelationships.md # ER diagram documentation (1.2)
 │   └── database/
@@ -75,21 +74,6 @@ The class diagram is provided as a Visual Studio `.cd` file (`CoffeShopDiagram.c
 The entity-relationship diagram is documented in [`DatabaseRelationships.md`](Problem%201/DatabaseRelationships.md), covering all 12 tables, their primary keys, foreign key relationships, junction tables, and cardinality.
 
 A Microsoft Access database (`coffeeShop.accdb`) implements the schema.
-
-### Running the Demo (`Program.cs`)
-
-The console app connects to the Access database and runs a count query to confirm the connection is working.
-
-**Requirements:**
-- Windows with Microsoft Access Database Engine (ACE OLEDB 12.0) installed.
-- The `.accdb` file present at the path configured in `Program.cs`.
-
-```bash
-cd "Problem 1"
-dotnet run
-```
-
----
 
 ## Problem 2 — SieMarket Online Electronics Store
 
