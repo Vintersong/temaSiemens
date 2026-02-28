@@ -105,30 +105,6 @@ Represents a customer order containing one or more items.
 
 > If the total value of an order exceeds **500 €**, the customer receives a **10% discount** on the entire order.
 
-```csharp
-if (subtotal > 500)
-    return subtotal * 0.9m;
-```
-
-### Example Usage
-
-```csharp
-var customer1 = new Customer(1, "Ana", "Pop");
-var customer2 = new Customer(2, "Ion", "Ionescu");
-
-var order1 = new Order(1, customer1);
-order1.Items.Add(new Item("Laptop", 1, 1200m));   // subtotal 1200 → 10% off → 1080
-
-var order2 = new Order(2, customer2);
-order2.Items.Add(new Item("Phone", 2, 300m));      // subtotal 600 → 10% off → 540
-order2.Items.Add(new Item("Cable", 3, 10m));       // subtotal 630 → 10% off → 567
-
-var allOrders = new List<Order> { order1, order2 };
-
-Console.WriteLine(Order.FindTopSpender(allOrders));           // "Ana Pop"
-var popular = Order.GetPopularProducts(allOrders);            // Cable:3, Phone:2, Laptop:1
-```
-
 ---
 
 ## Technologies
