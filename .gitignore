@@ -1,0 +1,23 @@
+# IDE metadata
+.vs/
+
+# Build output
+bin/
+obj/
+
+# Connection demo - not a deliverable for the assignment
+Problem 1/Program.cs
+
+# Visual Studio user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docview
+
+# Copilot session cache
+**/CopilotSnapshots/
+**/CopilotIndices/
+**/copilot-chat/
+Problem 1/database/coffeeShop_Backup.accdb
+Problem 1/homework.sln
+Problem 1/homework.csproj

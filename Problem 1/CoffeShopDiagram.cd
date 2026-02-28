@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Barista">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIgAAAAAAIAAEAAIAACAAAAACAAAAIAAAACAAAAAY=</HashCode>
+      <FileName>Barista.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Shop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Beverage">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAAAAAAAAQAAEAAABEAAAAAAAgAAAAAAAAAAACA=</HashCode>
+      <FileName>Beverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeveragePrice">
+    <Position X="2.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAIQAAEQAAgAAAABAAAEAAAAAAAgAAAAAAAAIAAAA=</HashCode>
+      <FileName>BeveragePrices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beverage" />
+      <Property Name="Size" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Customer">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAABRAAAAAAAABAAICAAAEUAQACAIAAAAAAgAACA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MembershipType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Extra">
+    <Position X="13" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABAAAAEAAABAAAAAAAAABAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Extra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoyaltyTransaction">
+    <Position X="5.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABASEAAACIgAAAAAAAAgUAQAQAAAAEAAEAAAAAA=</HashCode>
+      <FileName>LoyaltyTransaction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MembershipType">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAIAAAAABAQAAAAIABAAAAAAAA=</HashCode>
+      <FileName>MembershipType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Order">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAEICDAQAEAICIAAAIAAAgCAkBDAQAAAAAAACAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Barista" />
+      <Property Name="Shop" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OrderItem">
+    <Position X="16" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAKRAAEAQAgAABBAAAAEAAIAAAQoAAABAAgAIAAAA=</HashCode>
+      <FileName>OrderItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beverage" />
+      <Property Name="Size" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Extras" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OrderItemExtra">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAAAQAAAJIBAAAAAABAAACAAAAABAAAAAAAAA=</HashCode>
+      <FileName>OrderItemExtra.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderItem" />
+      <Property Name="Extra" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Shop">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAACAAAIAAAAAAgAAAAgAAAAAEAAAAAAA=</HashCode>
+      <FileName>Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Size">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Size.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
