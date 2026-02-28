@@ -22,7 +22,7 @@ temaSiemens/
 │   ├── OrderItemExtra.cs
 │   ├── Shop.cs
 │   ├── Size.cs
-│   ├── Program.cs
+│   ├── Database Diagram.png # Visual representation of the database tables and their relationship.
 │   ├── CoffeShopDiagram.cd      # Visual Studio class diagram (1.1)
 │   ├── DatabaseRelationships.md # ER diagram documentation (1.2)
 │   └── database/
@@ -76,21 +76,6 @@ The entity-relationship diagram is documented in [`DatabaseRelationships.md`](Pr
 
 A Microsoft Access database (`coffeeShop.accdb`) implements the schema.
 
-### Running the Demo (`Program.cs`)
-
-The console app connects to the Access database and runs a count query to confirm the connection is working.
-
-**Requirements:**
-- Windows with Microsoft Access Database Engine (ACE OLEDB 12.0) installed.
-- The `.accdb` file present at the path configured in `Program.cs`.
-
-```bash
-cd "Problem 1"
-dotnet run
-```
-
----
-
 ## Problem 2 — SieMarket Online Electronics Store
 
 ### Domain Overview
@@ -119,30 +104,6 @@ Represents a customer order containing one or more items.
 ### Discount Policy
 
 > If the total value of an order exceeds **500 €**, the customer receives a **10% discount** on the entire order.
-
-```csharp
-if (subtotal > 500)
-    return subtotal * 0.9m;
-```
-
-### Example Usage
-
-```csharp
-var customer1 = new Customer(1, "Ana", "Pop");
-var customer2 = new Customer(2, "Ion", "Ionescu");
-
-var order1 = new Order(1, customer1);
-order1.Items.Add(new Item("Laptop", 1, 1200m));   // subtotal 1200 → 10% off → 1080
-
-var order2 = new Order(2, customer2);
-order2.Items.Add(new Item("Phone", 2, 300m));      // subtotal 600 → 10% off → 540
-order2.Items.Add(new Item("Cable", 3, 10m));       // subtotal 630 → 10% off → 567
-
-var allOrders = new List<Order> { order1, order2 };
-
-Console.WriteLine(Order.FindTopSpender(allOrders));           // "Ana Pop"
-var popular = Order.GetPopularProducts(allOrders);            // Cable:3, Phone:2, Laptop:1
-```
 
 ---
 
