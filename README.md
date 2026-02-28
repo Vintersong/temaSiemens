@@ -22,6 +22,7 @@ temaSiemens/
 │   ├── OrderItemExtra.cs
 │   ├── Shop.cs
 │   ├── Size.cs
+│   ├── Database Diagram.png # Visual representation of the database tables and their relationship.
 │   ├── CoffeShopDiagram.cd      # Visual Studio class diagram (1.1)
 │   ├── DatabaseRelationships.md # ER diagram documentation (1.2)
 │   └── database/
